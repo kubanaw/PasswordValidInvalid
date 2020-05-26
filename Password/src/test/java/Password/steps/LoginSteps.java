@@ -65,7 +65,7 @@ public class LoginSteps {
 		Alert alert = driver.switchTo().alert();
 		System.out.println(alert.getText());
 		
-		Assert.assertEquals(alert.getText(), "validation succeeded");
+		Assert.assertEquals(alert.getText(), "validation succeeded!");
 	}
 	
 	@Then("^I should be presented with a unsuccesfful validation alert$")
@@ -73,7 +73,7 @@ public class LoginSteps {
 		Alert alert = driver.switchTo().alert();
 		System.out.println(alert.getText());
 		
-		Assert.assertEquals(alert.getText(), "validation failed");
+		Assert.assertEquals(alert.getText(), "validation failed!");
 	}
 
 }
